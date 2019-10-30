@@ -1,0 +1,19 @@
+<h1>Delete Users</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+{{#if msg}} <span>{{msg}}</span>{{/if}}
+{{#if s}}
+<div class="alert alert-success">
+  <strong>Sucessfully Deleted:</strong> Record has been deleted.
+</div>
+{{/if}}
+{{#if e}}
+<div class="alert alert-danger">
+  <strong>Unsuccessfull:</strong> Record not found.
+</div>
+{{/if}}
+<form class="form-inline" method="POST" action="/deleteuser">
+  <div class="form-group">
+    <input type="text" name="id" class="form-control" placeholder="Delete User By ID">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Delete">
+</form>

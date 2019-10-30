@@ -1,0 +1,18 @@
+<h1>Search Users</h1>
+{{#if error}} <span>{{error}}</span>{{/if}}
+{{#if s}}
+<div class="alert alert-success">
+  <strong>Found Successfull:</strong>.
+</div>
+{{/if}}
+{{#if e}}
+<div class="alert alert-danger">
+  <strong> Not Found:</strong> ID not exists.
+</div>
+{{/if}}
+<form class="form-inline" method="POST" action="/searchuser">
+  <div class="form-group">
+    <input type="text" name="id" class="form-control" placeholder="Search Users By ID">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Search">
+</form>

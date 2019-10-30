@@ -1,0 +1,12 @@
+{{#if e}}
+<div class="alert alert-danger">
+  <strong>Unsuccessfull:</strong> Record not found.
+</div>
+{{/if}}
+<h1>Update User</h1>
+<form class="form-inline" method="POST" action="/updateuser">
+  <div class="form-group">
+    <input type="text" name="id" class="form-control" placeholder="Update User By ID">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Update">
+</form>

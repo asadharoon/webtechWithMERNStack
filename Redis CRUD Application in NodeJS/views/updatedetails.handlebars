@@ -1,0 +1,29 @@
+<h1>Update User</h1>
+{{#if s}}
+<div class="alert alert-success">
+  <strong>successfully Updated:</strong> Record has been updated.
+</div>
+{{/if}}
+<form method="POST" action="/updateNew">
+  <div class="form-group">
+    <label>ID</label>
+    <input type="text" name="id" class="form-control" placeholder="Add ID" value="{{user.id}}" readonly>
+  </div>
+  <div class="form-group">
+    <label>First Name</label>
+    <input type="text" name="firstname" class="form-control" placeholder="First Name" value="{{user.firstname}}">
+  </div>
+  <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" name="lastname" class="form-control" placeholder="Last Name" value="{{user.lastname}}">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" name="email" class="form-control" placeholder="Email Address" value="{{user.email}}">
+  </div>
+  <div class="form-group">
+    <label>Phone</label>
+    <input type="text" name="phone" class="form-control" placeholder="Phone Number" value="{{user.PhoneNumber}}">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Update">
+</form>

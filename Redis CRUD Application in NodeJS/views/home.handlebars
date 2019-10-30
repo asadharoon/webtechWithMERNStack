@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .container{
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to User API CRUD with Redis</h1>
+        <p>We have performed get,put,delete,post method in NodeJS with Redis Database</p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>route</th><th>Method</th><th>data</th><th>output</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://usman-recipes.herokuapp.com/api/recipes">https://usman-recipes.herokuapp.com/api/recipes</a></td>
+                        <td>GET </td>
+                        <td> </td>
+                        <td>a list of recipes</td>
+                    </tr>
+                    <tr>
+                        <td><a>https://usman-recipes.herokuapp.com/api/recipes/:id</a>
+                        </td><td>GET </td>
+                        <td> </td>
+                        <td>a single of recipe. put the id of the record in :id </td>
+                    </tr>
+                    <tr>
+                        <td><a>https://usman-recipes.herokuapp.com/api/recipes</a></td>
+                        <td>POST </td>
+                        <td>{'title':'Title of recipe','body','description of your recipe'}</td>
+                        <td>Create a new Recipe</td>
+                    </tr>
+                    <tr>
+                        <td><a>https://usman-recipes.herokuapp.com/api/recipes/:id</a></td>
+                        <td>PUT </td>
+                        <td>{'title':'Title of recipe','body','description of your recipe'}</td>
+                        <td>Update a Recipe. put the id of the record in :id </td>
+                    </tr>
+                    <tr>
+                        <td><a>https://usman-recipes.herokuapp.com/api/recipes/:id</a></td>
+                        <td>DELETE </td>
+                        <td> </td>
+                        <td>DELETE a Recipe. put the id of the record in :id </td>
+                    </tr>
+                    </tbody>
+                    </table>
+    </div>
+    <div class="container">
+        <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+        <a class="btn btn-primary btn-lg" href="/add" role="button">Add</a>
+        <a class="btn btn-primary btn-lg" href="/update" role="button">Update</a>
+        <a class="btn btn-primary btn-lg" href="/search" role="button">Search</a>
+        <a class="btn btn-primary btn-lg" href="/delete" role="button">Delete</a>
+    </div>
+    <div class="container">
+        {{{body}}}
+    </div>
+</body>
+</html>
