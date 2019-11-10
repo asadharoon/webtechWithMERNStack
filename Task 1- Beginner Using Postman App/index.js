@@ -72,7 +72,7 @@ app.delete('/car/delete/:name', function(req, res) {
         res.status(404).send("Not Found Car");
     } else {
         var carIndex = car.indexOf(cardel);
-        car.splice(caIndex, 1);
+        car.splice(carIndex, 1);
         res.send(car);
     }
 });
