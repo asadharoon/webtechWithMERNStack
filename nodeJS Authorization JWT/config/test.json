@@ -1,0 +1,4 @@
+{
+    "db": "mongodb://localhost/auth",
+    "jwtPrivateKey": "AsadPrivateKey"
+}
